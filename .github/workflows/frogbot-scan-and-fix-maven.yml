@@ -45,4 +45,4 @@ jobs:
           
           # [Optional]
           # Xray Watches. Learn more about them here: https://www.jfrog.com/confluence/display/JFROG/Configuring+Xray+Watches
-          JF_WATCHES: default-watch
+          JF_WATCHES: default_watch
