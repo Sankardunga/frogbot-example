@@ -11,7 +11,8 @@ permissions:
   security-events: write
 jobs:
   create-fix-pull-requests:
-    runs-on: [k8s-runner] # AWS K8s Runner for Swisspost
+    ##runs-on: [k8s-runner] # AWS K8s Runner for Swisspost
+    runs-on: sankardk-mac
     steps:
       - uses: actions/checkout@v2
 
