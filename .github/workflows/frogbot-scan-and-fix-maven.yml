@@ -11,7 +11,8 @@ permissions:
   security-events: write
 jobs:
   create-fix-pull-requests:
-    runs-on: [k8s-runner] # AWS K8s Runner for Swisspost
+    ##runs-on: [k8s-runner] # AWS K8s Runner for Swisspost
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
 
@@ -44,4 +45,4 @@ jobs:
           
           # [Optional]
           # Xray Watches. Learn more about them here: https://www.jfrog.com/confluence/display/JFROG/Configuring+Xray+Watches
-          JF_WATCHES: default-watch
+          JF_WATCHES: default_watch
