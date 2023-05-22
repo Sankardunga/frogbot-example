@@ -12,7 +12,7 @@ permissions:
 jobs:
   create-fix-pull-requests:
     ##runs-on: [k8s-runner] # AWS K8s Runner for Swisspost
-    runs-on: sankardk-mac
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
 
